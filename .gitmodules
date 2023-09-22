@@ -1,0 +1,3 @@
+[submodule "preprocess/Iemocap-preprocess"]
+	path = preprocess/Iemocap-preprocess
+	url = https://github.com/IoannisKansizoglou/Iemocap-preprocess
