@@ -142,7 +142,7 @@ def main():
     create_folder(spectrogramPATH)
 
     # Number of sessions to iterate
-    for ses in range(4, n_sessions+1):
+    for ses in range(1, n_sessions+1):
 
         # Path to session's excel file
         extractionmapPATH = 'E:/datasets/preprocessed/extractionmap/cut_extractionmap' + \

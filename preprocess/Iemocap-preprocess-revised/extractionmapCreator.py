@@ -92,15 +92,22 @@ def read_emotion_values(line, i, emotion_elements):
     return emotion_elements, i
 
 def read_smp_id(line, i, smp_ids):
-
-    # Go to first letter of emotion
-    i += 1
-    # Last position in Region of Interest
-    f = i+19
-    # Append this string as string to emotion_list
-    smp_ids.append(str(line[i:f]))
-    # Move i to the end
-    i = f
+    if "script" in line:
+        i += 1
+        f = i+22
+        # Append this string as string to emotion_list
+        smp_ids.append(str(line[i:f]))
+        # Move i to the end
+        i = f
+    elif "impro" in line:
+        i += 1
+        f = i+19
+        # Append this string as string to emotion_list
+        smp_ids.append(str(line[i:f]))
+        # Move i to the end
+        i = f
+    else:
+        raise Exception
     # Return emotions' list and current position in line
     return smp_ids, i
 
@@ -318,19 +325,30 @@ def handle_values(fileNAME, PATH, writer, rate):
             # Key-character for recognizing line with time and emovector values
             if line[i] == '[':
                 # First read time values
+                # # Pass next string until emotion value
+                # # Read Sample ID
+                # smp_id, i = read_smp_id(line, i, smp_id)
+                # while line[i] != '\t':
+                #     i += 1
+                # # Read sum emotion
+                # emotion, i = read_emotion_values(line, i, emotion)
+                # # Pass string until emovector values
+                # while line[i] != '[':
+                #     i += 1
+                # # Read emovector values
+                # emovector, i = read_emovector_values(line, i, emovector)
+
                 Ti, Tf, i = read_time_values(line, i, Ti, Tf)
-                # Pass next string until emotion value
-                # Read Sample ID
-                smp_id, i = read_smp_id(line, i, smp_id)
-                while line[i] != '\t':
-                    i += 1
-                # Read sum emotion
-                emotion, i = read_emotion_values(line, i, emotion)
-                # Pass string until emovector values
-                while line[i] != '[':
-                    i += 1
-                # Read emovector values
-                emovector, i = read_emovector_values(line, i, emovector)
+                time_info, _smp_id, _emotion, _emovector = line.split("\t")
+
+                # Ti.append(float(time_info[1:7]))
+                # Tf.append(float(time_info[-7:-1]))
+
+                smp_id.append(_smp_id)
+                emotion.append(_emotion)
+                emovector.append([float(i) for i in (_emovector[1:-2]).split(", ")])
+
+                pass
 
         # Initial frame is the first frame (int) AFTER Ti*rate
         iframe = np.add(np.multiply(Ti, rate).astype(int), 1)
@@ -362,8 +380,8 @@ def save_dataFrame(iframe, fframe, emotion, emovector, speaker, smp_id, fileNAME
     sorted_df = df.sort_values(by=['iframe'])
 
     sorted_df = sorted_df.reset_index(drop=True)
-    sorted_df['iframe'], sorted_df['fframe'] = cut_dual_frames(
-        sorted_df['iframe'], sorted_df['fframe'], sorted_df['speaker'])
+    # sorted_df['iframe'], sorted_df['fframe'] = cut_dual_frames(
+    #     sorted_df['iframe'], sorted_df['fframe'], sorted_df['speaker'])
     # Write Dataframe to session's excel and save
     sorted_df.to_excel(writer, fileNAME)
     writer._save()
@@ -396,12 +414,12 @@ def main():
                        == '.txt' and not i.startswith('._')]
         # Create session's extractionmap to write the values
         writer = pd.ExcelWriter(
-            'E:/datasets/preprocessed/cut_extractionmap'+str(ses)+'.xlsx', engine='openpyxl')
+            'E:/datasets/preprocessed/extractionmap/cut_extractionmap'+str(ses)+'.xlsx', engine='openpyxl')
         # Iterate for all EmoEvaluation files in EMO_EVAL_PATH
         for eval in evaluations:
 
             # Get values from current EmoEvaluation file
-            handle_values(eval[:-4], EMO_EVAL_PATH+eval, writer, video_rate)
+            handle_values(eval[:-4], EMO_EVAL_PATH+eval, writer, 16000)
 
     # Execution time
     print(
