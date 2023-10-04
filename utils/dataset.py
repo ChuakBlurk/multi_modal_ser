@@ -42,7 +42,7 @@ class MMSERDataset(Dataset):
                  fn_path, 
                  cutmap_path, 
                  text_path, 
-                 pretrained_model="openai/whisper-large"):
+                 pretrained_model="openai/whisper-base.en"):
         self.audio_processer = AutoProcessor.from_pretrained(pretrained_model)
 #         self.audio_encoder = WhisperForConditionalGeneration.from_pretrained(pretrained_model)
         self.__load_text__(text_path)
@@ -55,9 +55,9 @@ class MMSERDataset(Dataset):
     
     def __getitem__(self, idx):
         return {
-            "fn": self.fn_list[idx],
-            "raw": self.raw_list[idx],
+#             "fn": self.fn_list[idx],
+#             "raw": self.raw_list[idx],
             "input_features": self.input_features[idx],
-            "text": self.df_["transcript"][idx],
+#             "text": self.df_["transcript"][idx],
             "labels": self.df_["emotion_id"][idx]
         }
