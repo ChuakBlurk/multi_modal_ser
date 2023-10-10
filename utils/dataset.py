@@ -17,12 +17,11 @@ class MMSERDataset(Dataset):
             sheets = xl.sheet_names
             for sheet in sheets:
                 sheet_df = pd.concat([sheet_df, xl.parse(sheet)])
-        self.df_ = sheet_df.reset_index(drop=True)
+        self.df_ = sheet_df
+        # remove samples not agreed
+        self.df_["emotion_id"] = self.df_["emotion"].map(self.available_emotions)
+        self.df_ = self.df_[self.df_["emotion_id"].notna()].reset_index(drop=True)
         self.df_ = pd.merge(self.df_, self.df_text, on=["smp_id"])
-        self.labels = list(self.df_["emotion"].unique())
-        self.label2id = {label: i for i, label in enumerate(self.labels)}
-        self.id2label = {i: label for i, label in enumerate(self.labels)}
-        self.df_["emotion_id"] = self.df_["emotion"].map(self.label2id)
         
     def __load_text__(self, text_path):
         self.df_text = pd.read_csv(text_path)
@@ -53,6 +52,13 @@ class MMSERDataset(Dataset):
                  text_path, 
                  pretrained_model="openai/whisper-large"):
         audio_processer = AutoProcessor.from_pretrained(pretrained_model)
+        self.available_emotions = {
+            "hap": 0,
+            "ang": 1,
+            "neu": 2,
+            "sad": 3,
+            "exc": 0,
+        }
         self.__load_text__(text_path)
         self.__load_label__(cutmap_path)
         self.__load_audio__(fn_path, audio_processer)
@@ -62,8 +68,9 @@ class MMSERDataset(Dataset):
     
     def __getitem__(self, idx):
         return {
-            "idx": idx,
+            "smp_id":  self.fn_list[idx],
             "audio": self.input_features[idx],
             "text": self.df_["transcript"][idx],
+            "emotion": self.df_["emotion"][idx],
             "labels": self.df_["emotion_id"][idx]
         }
