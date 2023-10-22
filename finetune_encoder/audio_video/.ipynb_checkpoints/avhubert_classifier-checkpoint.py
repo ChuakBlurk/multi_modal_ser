@@ -34,15 +34,15 @@ class AVHUBERTClassifier(torch.nn.Module):
         labels=None,
         **kwargs
     ):
-        with torch.no_grad():
-            outputs = self.encoder.extract_finetune(
-                {
-                    "audio": audio, 
-                    "video": video,
-                    "padding_mask": padding_mask
-                }
-            )
-            hidden_states = outputs[0]
+        # with torch.no_grad():
+        outputs = self.encoder.extract_finetune(
+            {
+                "audio": audio, 
+                "video": video,
+                "padding_mask": padding_mask
+            }
+        )
+        hidden_states = outputs[0]
         
         hidden_states = self.projector(hidden_states)
         attention_mask = padding_mask
