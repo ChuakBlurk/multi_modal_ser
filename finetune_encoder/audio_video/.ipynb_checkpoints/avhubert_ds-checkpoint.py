@@ -70,11 +70,11 @@ class AVHUBERTDataset(Dataset):
     
     def __load_video__(self, idx):
         frames = avhubert_utils.load_video(os.path.join(self.video_path, idx.split("_")[0][:-1], idx+".mp4"))
-        transform = avhubert_utils.Compose([
-          avhubert_utils.Normalize(0.0, 255.0),
-          avhubert_utils.CenterCrop((88, 88)),
-          avhubert_utils.Normalize(0.421, 0.165)])
-        frames = transform(frames)
+        # transform = avhubert_utils.Compose([
+        #   avhubert_utils.Normalize(0.0, 255.0),
+        #   avhubert_utils.CenterCrop((88, 88)),
+        #   avhubert_utils.Normalize(0.421, 0.165)])
+        # frames = transform(frames)
         frames = torch.FloatTensor(frames).unsqueeze(dim=0).unsqueeze(dim=0)
         video_feats = frames
         return video_feats
