@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/data/chuak/mmser/src/multi_modal_ser/finetune_encoder/audio_video/train_roi_aug.py", line 290, in <module>
+    main()
+  File "/data/chuak/mmser/src/multi_modal_ser/finetune_encoder/audio_video/train_roi_aug.py", line 236, in main
+    train_set = train_ds
+NameError: name 'train_ds' is not defined
+Traceback (most recent call last):
+  File "/data/chuak/mmser/src/multi_modal_ser/finetune_encoder/audio_video/train_roi_aug.py", line 290, in <module>
+    main()
+  File "/data/chuak/mmser/src/multi_modal_ser/finetune_encoder/audio_video/train_roi_aug.py", line 236, in main
+    train_set = train_ds
+NameError: name 'train_ds' is not defined

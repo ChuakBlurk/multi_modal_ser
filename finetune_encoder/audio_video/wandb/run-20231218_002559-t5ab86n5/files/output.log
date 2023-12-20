@@ -1,0 +1,118 @@
+Detected kernel version 3.10.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+
+  0%|                                                                               | 1/5936 [00:27<45:57:17, 27.87s/it]Traceback (most recent call last):
+  File "/data/chuak/mmser/src/multi_modal_ser/finetune_encoder/audio_video/train_roi_aug.py", line 291, in <module>
+    main()
+  File "/data/chuak/mmser/src/multi_modal_ser/finetune_encoder/audio_video/train_roi_aug.py", line 279, in main
+    trainer.train()
+  File "/data/chuak/mmser/lib/python3.10/site-packages/transformers/trainer.py", line 1537, in train
+    return inner_training_loop(
+  File "/data/chuak/mmser/lib/python3.10/site-packages/transformers/trainer.py", line 1854, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+  File "/data/chuak/mmser/lib/python3.10/site-packages/transformers/trainer.py", line 2728, in training_step
+    loss = self.compute_loss(model, inputs)
+  File "/data/chuak/mmser/src/multi_modal_ser/finetune_encoder/audio_video/avhubert_trainer.py", line 12, in compute_loss
+    outputs = model(**inputs)
+  File "/data/chuak/mmser/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data/chuak/mmser/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data/chuak/mmser/lib/python3.10/site-packages/torch/nn/parallel/data_parallel.py", line 185, in forward
+    outputs = self.parallel_apply(replicas, inputs, module_kwargs)
+  File "/data/chuak/mmser/lib/python3.10/site-packages/torch/nn/parallel/data_parallel.py", line 200, in parallel_apply
+    return parallel_apply(replicas, inputs, kwargs, self.device_ids[:len(replicas)])
+  File "/data/chuak/mmser/lib/python3.10/site-packages/torch/nn/parallel/parallel_apply.py", line 110, in parallel_apply
+    output.reraise()
+  File "/data/chuak/mmser/lib/python3.10/site-packages/torch/_utils.py", line 694, in reraise
+    raise exception
+torch.cuda.OutOfMemoryError: Caught OutOfMemoryError in replica 4 on device 4.
+Original Traceback (most recent call last):
+  File "/data/chuak/mmser/lib/python3.10/site-packages/torch/nn/parallel/parallel_apply.py", line 85, in _worker
+    output = module(*input, **kwargs)
+  File "/data/chuak/mmser/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data/chuak/mmser/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data/chuak/mmser/src/multi_modal_ser/finetune_encoder/audio_video/avhubert_classifier.py", line 38, in forward
+    outputs = self.encoder.extract_finetune(
+  File "/data/chuak/mmser/src/multi_modal_ser/finetune_encoder/audio_video/av_hubert/avhubert/hubert.py", line 739, in extract_finetune
+    x, _ = self.encoder(
+  File "/data/chuak/mmser/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data/chuak/mmser/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data/chuak/mmser/lib/python3.10/site-packages/fairseq/models/wav2vec/wav2vec2.py", line 862, in forward
+    x, layer_results = self.extract_features(x, padding_mask, layer)
+  File "/data/chuak/mmser/lib/python3.10/site-packages/fairseq/models/wav2vec/wav2vec2.py", line 891, in extract_features
+    x, z = layer(x, self_attn_padding_mask=padding_mask, need_weights=False)
+  File "/data/chuak/mmser/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data/chuak/mmser/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data/chuak/mmser/lib/python3.10/site-packages/fairseq/models/wav2vec/wav2vec2.py", line 990, in forward
+    x = self.activation_fn(self.fc1(x))
+  File "/data/chuak/mmser/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data/chuak/mmser/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data/chuak/mmser/lib/python3.10/site-packages/torch/nn/modules/linear.py", line 114, in forward
+    return F.linear(input, self.weight, self.bias)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 2.00 MiB. GPU 4 has a total capacty of 11.76 GiB of which 3.38 MiB is free. Process 3260 has 3.77 GiB memory in use. Including non-PyTorch memory, this process has 7.97 GiB memory in use. Of the allocated memory 5.56 GiB is allocated by PyTorch, and 2.01 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "/data/chuak/mmser/src/multi_modal_ser/finetune_encoder/audio_video/train_roi_aug.py", line 291, in <module>
+    main()
+  File "/data/chuak/mmser/src/multi_modal_ser/finetune_encoder/audio_video/train_roi_aug.py", line 279, in main
+    trainer.train()
+  File "/data/chuak/mmser/lib/python3.10/site-packages/transformers/trainer.py", line 1537, in train
+    return inner_training_loop(
+  File "/data/chuak/mmser/lib/python3.10/site-packages/transformers/trainer.py", line 1854, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+  File "/data/chuak/mmser/lib/python3.10/site-packages/transformers/trainer.py", line 2728, in training_step
+    loss = self.compute_loss(model, inputs)
+  File "/data/chuak/mmser/src/multi_modal_ser/finetune_encoder/audio_video/avhubert_trainer.py", line 12, in compute_loss
+    outputs = model(**inputs)
+  File "/data/chuak/mmser/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data/chuak/mmser/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data/chuak/mmser/lib/python3.10/site-packages/torch/nn/parallel/data_parallel.py", line 185, in forward
+    outputs = self.parallel_apply(replicas, inputs, module_kwargs)
+  File "/data/chuak/mmser/lib/python3.10/site-packages/torch/nn/parallel/data_parallel.py", line 200, in parallel_apply
+    return parallel_apply(replicas, inputs, kwargs, self.device_ids[:len(replicas)])
+  File "/data/chuak/mmser/lib/python3.10/site-packages/torch/nn/parallel/parallel_apply.py", line 110, in parallel_apply
+    output.reraise()
+  File "/data/chuak/mmser/lib/python3.10/site-packages/torch/_utils.py", line 694, in reraise
+    raise exception
+torch.cuda.OutOfMemoryError: Caught OutOfMemoryError in replica 4 on device 4.
+Original Traceback (most recent call last):
+  File "/data/chuak/mmser/lib/python3.10/site-packages/torch/nn/parallel/parallel_apply.py", line 85, in _worker
+    output = module(*input, **kwargs)
+  File "/data/chuak/mmser/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data/chuak/mmser/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data/chuak/mmser/src/multi_modal_ser/finetune_encoder/audio_video/avhubert_classifier.py", line 38, in forward
+    outputs = self.encoder.extract_finetune(
+  File "/data/chuak/mmser/src/multi_modal_ser/finetune_encoder/audio_video/av_hubert/avhubert/hubert.py", line 739, in extract_finetune
+    x, _ = self.encoder(
+  File "/data/chuak/mmser/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data/chuak/mmser/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data/chuak/mmser/lib/python3.10/site-packages/fairseq/models/wav2vec/wav2vec2.py", line 862, in forward
+    x, layer_results = self.extract_features(x, padding_mask, layer)
+  File "/data/chuak/mmser/lib/python3.10/site-packages/fairseq/models/wav2vec/wav2vec2.py", line 891, in extract_features
+    x, z = layer(x, self_attn_padding_mask=padding_mask, need_weights=False)
+  File "/data/chuak/mmser/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data/chuak/mmser/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data/chuak/mmser/lib/python3.10/site-packages/fairseq/models/wav2vec/wav2vec2.py", line 990, in forward
+    x = self.activation_fn(self.fc1(x))
+  File "/data/chuak/mmser/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data/chuak/mmser/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data/chuak/mmser/lib/python3.10/site-packages/torch/nn/modules/linear.py", line 114, in forward
+    return F.linear(input, self.weight, self.bias)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 2.00 MiB. GPU 4 has a total capacty of 11.76 GiB of which 3.38 MiB is free. Process 3260 has 3.77 GiB memory in use. Including non-PyTorch memory, this process has 7.97 GiB memory in use. Of the allocated memory 5.56 GiB is allocated by PyTorch, and 2.01 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF

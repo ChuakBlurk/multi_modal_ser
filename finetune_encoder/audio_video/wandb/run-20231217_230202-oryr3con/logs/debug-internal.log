@@ -1,0 +1,205 @@
+2023-12-17 23:02:02,529 INFO    StreamThr :37652 [internal.py:wandb_internal():86] W&B internal server running at pid: 37652, started at: 2023-12-17 23:02:02.526930
+2023-12-17 23:02:02,531 DEBUG   HandlerThread:37652 [handler.py:handle_request():146] handle_request: status
+2023-12-17 23:02:02,536 INFO    WriterThread:37652 [datastore.py:open_for_write():85] open: /data/chuak/mmser/src/multi_modal_ser/finetune_encoder/audio_video/wandb/run-20231217_230202-oryr3con/run-oryr3con.wandb
+2023-12-17 23:02:02,541 DEBUG   SenderThread:37652 [sender.py:send():382] send: header
+2023-12-17 23:02:02,558 DEBUG   SenderThread:37652 [sender.py:send():382] send: run
+2023-12-17 23:02:03,216 INFO    SenderThread:37652 [dir_watcher.py:__init__():211] watching files in: /data/chuak/mmser/src/multi_modal_ser/finetune_encoder/audio_video/wandb/run-20231217_230202-oryr3con/files
+2023-12-17 23:02:03,217 INFO    SenderThread:37652 [sender.py:_start_run_threads():1136] run started: oryr3con with start time 1702825322.526322
+2023-12-17 23:02:03,252 DEBUG   HandlerThread:37652 [handler.py:handle_request():146] handle_request: check_version
+2023-12-17 23:02:03,253 DEBUG   SenderThread:37652 [sender.py:send_request():409] send_request: check_version
+2023-12-17 23:02:03,437 DEBUG   HandlerThread:37652 [handler.py:handle_request():146] handle_request: run_start
+2023-12-17 23:02:03,447 DEBUG   HandlerThread:37652 [system_info.py:__init__():32] System info init
+2023-12-17 23:02:03,447 DEBUG   HandlerThread:37652 [system_info.py:__init__():47] System info init done
+2023-12-17 23:02:03,447 INFO    HandlerThread:37652 [system_monitor.py:start():194] Starting system monitor
+2023-12-17 23:02:03,448 INFO    SystemMonitor:37652 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2023-12-17 23:02:03,450 INFO    HandlerThread:37652 [system_monitor.py:probe():214] Collecting system info
+2023-12-17 23:02:03,450 INFO    SystemMonitor:37652 [interfaces.py:start():190] Started cpu monitoring
+2023-12-17 23:02:03,452 INFO    SystemMonitor:37652 [interfaces.py:start():190] Started disk monitoring
+2023-12-17 23:02:03,455 INFO    SystemMonitor:37652 [interfaces.py:start():190] Started gpu monitoring
+2023-12-17 23:02:03,458 INFO    SystemMonitor:37652 [interfaces.py:start():190] Started memory monitoring
+2023-12-17 23:02:03,460 INFO    SystemMonitor:37652 [interfaces.py:start():190] Started network monitoring
+2023-12-17 23:02:03,507 DEBUG   HandlerThread:37652 [system_info.py:probe():196] Probing system
+2023-12-17 23:02:03,509 DEBUG   HandlerThread:37652 [system_info.py:_probe_git():181] Probing git
+2023-12-17 23:02:03,528 DEBUG   HandlerThread:37652 [system_info.py:_probe_git():189] Probing git done
+2023-12-17 23:02:03,528 DEBUG   HandlerThread:37652 [system_info.py:probe():244] Probing system done
+2023-12-17 23:02:03,528 DEBUG   HandlerThread:37652 [system_monitor.py:probe():223] {'os': 'Linux-3.10.0-1160.102.1.el7.x86_64-x86_64-with-glibc2.17', 'python': '3.10.0', 'heartbeatAt': '2023-12-17T15:02:03.507849', 'startedAt': '2023-12-17T15:02:02.493568', 'docker': None, 'cuda': None, 'args': ('dummy',), 'state': 'running', 'program': '/data/chuak/mmser/src/multi_modal_ser/finetune_encoder/audio_video/train_roi_aug.py', 'codePathLocal': 'train_roi_aug.py', 'codePath': 'finetune_encoder/audio_video/train_roi_aug.py', 'git': {'remote': 'https://github.com/ChuakBlurk/multi_modal_ser.git', 'commit': '693fa132e7bcef9e3a407d6b9ac6cad8a7cf1996'}, 'email': None, 'root': '/data/chuak/mmser/src/multi_modal_ser', 'host': 'ugcpu1', 'username': 'chuak', 'executable': '/data/chuak/mmser/bin/python', 'cpu_count': 24, 'cpu_count_logical': 48, 'cpu_freq': {'current': 1637.5, 'min': 800.0, 'max': 3300.0}, 'cpu_freq_per_core': [{'current': 800.0, 'min': 800.0, 'max': 3300.0}, {'current': 1000.0, 'min': 800.0, 'max': 3300.0}, {'current': 800.0, 'min': 800.0, 'max': 3300.0}, {'current': 800.0, 'min': 800.0, 'max': 3300.0}, {'current': 800.0, 'min': 800.0, 'max': 3300.0}, {'current': 800.0, 'min': 800.0, 'max': 3300.0}, {'current': 900.0, 'min': 800.0, 'max': 3300.0}, {'current': 1100.0, 'min': 800.0, 'max': 3300.0}, {'current': 800.0, 'min': 800.0, 'max': 3300.0}, {'current': 800.0, 'min': 800.0, 'max': 3300.0}, {'current': 800.0, 'min': 800.0, 'max': 3300.0}, {'current': 800.0, 'min': 800.0, 'max': 3300.0}, {'current': 800.0, 'min': 800.0, 'max': 3300.0}, {'current': 800.0, 'min': 800.0, 'max': 3300.0}, {'current': 1000.0, 'min': 800.0, 'max': 3300.0}, {'current': 800.0, 'min': 800.0, 'max': 3300.0}, {'current': 800.0, 'min': 800.0, 'max': 3300.0}, {'current': 800.0, 'min': 800.0, 'max': 3300.0}, {'current': 800.0, 'min': 800.0, 'max': 3300.0}, {'current': 800.0, 'min': 800.0, 'max': 3300.0}, {'current': 800.0, 'min': 800.0, 'max': 3300.0}, {'current': 800.0, 'min': 800.0, 'max': 3300.0}, {'current': 800.0, 'min': 800.0, 'max': 3300.0}, {'current': 800.0, 'min': 800.0, 'max': 3300.0}, {'current': 3300.0, 'min': 800.0, 'max': 3300.0}, {'current': 800.0, 'min': 800.0, 'max': 3300.0}, {'current': 2000.0, 'min': 800.0, 'max': 3300.0}, {'current': 2100.0, 'min': 800.0, 'max': 3300.0}, {'current': 1900.0, 'min': 800.0, 'max': 3300.0}, {'current': 3300.0, 'min': 800.0, 'max': 3300.0}, {'current': 2100.0, 'min': 800.0, 'max': 3300.0}, {'current': 1200.0, 'min': 800.0, 'max': 3300.0}, {'current': 3300.0, 'min': 800.0, 'max': 3300.0}, {'current': 3300.0, 'min': 800.0, 'max': 3300.0}, {'current': 3300.0, 'min': 800.0, 'max': 3300.0}, {'current': 3300.0, 'min': 800.0, 'max': 3300.0}, {'current': 2100.0, 'min': 800.0, 'max': 3300.0}, {'current': 800.0, 'min': 800.0, 'max': 3300.0}, {'current': 2100.0, 'min': 800.0, 'max': 3300.0}, {'current': 3300.0, 'min': 800.0, 'max': 3300.0}, {'current': 3300.0, 'min': 800.0, 'max': 3300.0}, {'current': 3300.0, 'min': 800.0, 'max': 3300.0}, {'current': 2100.0, 'min': 800.0, 'max': 3300.0}, {'current': 2100.0, 'min': 800.0, 'max': 3300.0}, {'current': 3300.0, 'min': 800.0, 'max': 3300.0}, {'current': 2100.0, 'min': 800.0, 'max': 3300.0}, {'current': 2100.0, 'min': 800.0, 'max': 3300.0}, {'current': 2100.0, 'min': 800.0, 'max': 3300.0}], 'disk': {'/': {'total': 19.990234375, 'used': 5.29449462890625}}, 'gpu': 'NVIDIA GeForce RTX 3080 Ti', 'gpu_count': 8, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3080 Ti', 'memory_total': 12884901888}, {'name': 'NVIDIA GeForce RTX 3080 Ti', 'memory_total': 12884901888}, {'name': 'NVIDIA GeForce RTX 3080 Ti', 'memory_total': 12884901888}, {'name': 'NVIDIA GeForce RTX 3080 Ti', 'memory_total': 12884901888}, {'name': 'NVIDIA GeForce RTX 3080 Ti', 'memory_total': 12884901888}, {'name': 'NVIDIA GeForce RTX 3080 Ti', 'memory_total': 12884901888}, {'name': 'NVIDIA GeForce RTX 3080 Ti', 'memory_total': 12884901888}, {'name': 'NVIDIA GeForce RTX 3080 Ti', 'memory_total': 12884901888}], 'memory': {'total': 125.41300582885742}}
+2023-12-17 23:02:03,529 INFO    HandlerThread:37652 [system_monitor.py:probe():224] Finished collecting system info
+2023-12-17 23:02:03,529 INFO    HandlerThread:37652 [system_monitor.py:probe():227] Publishing system info
+2023-12-17 23:02:03,529 DEBUG   HandlerThread:37652 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2023-12-17 23:02:03,532 DEBUG   HandlerThread:37652 [system_info.py:_save_pip():68] Saving pip packages done
+2023-12-17 23:02:03,536 INFO    HandlerThread:37652 [system_monitor.py:probe():229] Finished publishing system info
+2023-12-17 23:02:03,544 DEBUG   SenderThread:37652 [sender.py:send():382] send: files
+2023-12-17 23:02:03,544 INFO    SenderThread:37652 [sender.py:_save_file():1392] saving file wandb-metadata.json with policy now
+2023-12-17 23:02:03,569 DEBUG   SenderThread:37652 [sender.py:send():382] send: telemetry
+2023-12-17 23:02:03,570 DEBUG   HandlerThread:37652 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-17 23:02:03,570 DEBUG   SenderThread:37652 [sender.py:send_request():409] send_request: stop_status
+2023-12-17 23:02:03,580 DEBUG   HandlerThread:37652 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-17 23:02:04,222 INFO    Thread-12 :37652 [dir_watcher.py:_on_file_created():271] file/dir created: /data/chuak/mmser/src/multi_modal_ser/finetune_encoder/audio_video/wandb/run-20231217_230202-oryr3con/files/wandb-metadata.json
+2023-12-17 23:02:04,222 INFO    Thread-12 :37652 [dir_watcher.py:_on_file_created():271] file/dir created: /data/chuak/mmser/src/multi_modal_ser/finetune_encoder/audio_video/wandb/run-20231217_230202-oryr3con/files/output.log
+2023-12-17 23:02:04,223 INFO    Thread-12 :37652 [dir_watcher.py:_on_file_created():271] file/dir created: /data/chuak/mmser/src/multi_modal_ser/finetune_encoder/audio_video/wandb/run-20231217_230202-oryr3con/files/requirements.txt
+2023-12-17 23:02:04,377 INFO    wandb-upload_0:37652 [upload_job.py:push():131] Uploaded file /tmp/tmpsxhsyhb0wandb/uh01qwfy-wandb-metadata.json
+2023-12-17 23:02:04,395 DEBUG   SenderThread:37652 [sender.py:send():382] send: config
+2023-12-17 23:02:04,396 DEBUG   SenderThread:37652 [sender.py:send():382] send: metric
+2023-12-17 23:02:04,396 DEBUG   SenderThread:37652 [sender.py:send():382] send: telemetry
+2023-12-17 23:02:04,396 DEBUG   SenderThread:37652 [sender.py:send():382] send: metric
+2023-12-17 23:02:04,396 WARNING SenderThread:37652 [sender.py:send_metric():1343] Seen metric with glob (shouldn't happen)
+2023-12-17 23:02:04,396 DEBUG   SenderThread:37652 [sender.py:send():382] send: telemetry
+2023-12-17 23:02:06,221 INFO    Thread-12 :37652 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/chuak/mmser/src/multi_modal_ser/finetune_encoder/audio_video/wandb/run-20231217_230202-oryr3con/files/output.log
+2023-12-17 23:02:08,398 DEBUG   HandlerThread:37652 [handler.py:handle_request():146] handle_request: status_report
+2023-12-17 23:02:13,398 DEBUG   HandlerThread:37652 [handler.py:handle_request():146] handle_request: status_report
+2023-12-17 23:02:18,399 DEBUG   HandlerThread:37652 [handler.py:handle_request():146] handle_request: status_report
+2023-12-17 23:02:18,567 DEBUG   HandlerThread:37652 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-17 23:02:18,567 DEBUG   HandlerThread:37652 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-17 23:02:18,568 DEBUG   SenderThread:37652 [sender.py:send_request():409] send_request: stop_status
+2023-12-17 23:02:23,831 DEBUG   HandlerThread:37652 [handler.py:handle_request():146] handle_request: status_report
+2023-12-17 23:02:28,832 DEBUG   HandlerThread:37652 [handler.py:handle_request():146] handle_request: status_report
+2023-12-17 23:02:33,566 DEBUG   HandlerThread:37652 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-17 23:02:33,567 DEBUG   SenderThread:37652 [sender.py:send_request():409] send_request: stop_status
+2023-12-17 23:02:33,605 DEBUG   HandlerThread:37652 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-17 23:02:33,886 DEBUG   HandlerThread:37652 [handler.py:handle_request():146] handle_request: status_report
+2023-12-17 23:02:34,247 INFO    Thread-12 :37652 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/chuak/mmser/src/multi_modal_ser/finetune_encoder/audio_video/wandb/run-20231217_230202-oryr3con/files/config.yaml
+2023-12-17 23:02:36,252 INFO    Thread-12 :37652 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/chuak/mmser/src/multi_modal_ser/finetune_encoder/audio_video/wandb/run-20231217_230202-oryr3con/files/output.log
+2023-12-17 23:02:39,194 DEBUG   HandlerThread:37652 [handler.py:handle_request():146] handle_request: status_report
+2023-12-17 23:02:44,195 DEBUG   HandlerThread:37652 [handler.py:handle_request():146] handle_request: status_report
+2023-12-17 23:02:47,425 DEBUG   SenderThread:37652 [sender.py:send():382] send: exit
+2023-12-17 23:02:47,425 INFO    SenderThread:37652 [sender.py:send_exit():589] handling exit code: 1
+2023-12-17 23:02:47,426 INFO    SenderThread:37652 [sender.py:send_exit():591] handling runtime: 43
+2023-12-17 23:02:47,431 INFO    SenderThread:37652 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-17 23:02:47,432 INFO    SenderThread:37652 [sender.py:send_exit():597] send defer
+2023-12-17 23:02:47,433 DEBUG   HandlerThread:37652 [handler.py:handle_request():146] handle_request: defer
+2023-12-17 23:02:47,433 INFO    HandlerThread:37652 [handler.py:handle_request_defer():172] handle defer: 0
+2023-12-17 23:02:47,433 DEBUG   SenderThread:37652 [sender.py:send_request():409] send_request: defer
+2023-12-17 23:02:47,433 INFO    SenderThread:37652 [sender.py:send_request_defer():613] handle sender defer: 0
+2023-12-17 23:02:47,434 INFO    SenderThread:37652 [sender.py:transition_state():617] send defer: 1
+2023-12-17 23:02:47,434 DEBUG   HandlerThread:37652 [handler.py:handle_request():146] handle_request: defer
+2023-12-17 23:02:47,434 INFO    HandlerThread:37652 [handler.py:handle_request_defer():172] handle defer: 1
+2023-12-17 23:02:47,434 DEBUG   SenderThread:37652 [sender.py:send_request():409] send_request: defer
+2023-12-17 23:02:47,435 INFO    SenderThread:37652 [sender.py:send_request_defer():613] handle sender defer: 1
+2023-12-17 23:02:47,435 INFO    SenderThread:37652 [sender.py:transition_state():617] send defer: 2
+2023-12-17 23:02:47,435 DEBUG   HandlerThread:37652 [handler.py:handle_request():146] handle_request: defer
+2023-12-17 23:02:47,435 INFO    HandlerThread:37652 [handler.py:handle_request_defer():172] handle defer: 2
+2023-12-17 23:02:47,435 INFO    HandlerThread:37652 [system_monitor.py:finish():203] Stopping system monitor
+2023-12-17 23:02:47,436 DEBUG   SystemMonitor:37652 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2023-12-17 23:02:47,437 INFO    HandlerThread:37652 [interfaces.py:finish():202] Joined cpu monitor
+2023-12-17 23:02:47,437 DEBUG   SystemMonitor:37652 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2023-12-17 23:02:47,437 INFO    HandlerThread:37652 [interfaces.py:finish():202] Joined disk monitor
+2023-12-17 23:02:47,438 DEBUG   SystemMonitor:37652 [system_monitor.py:_start():183] Publishing last batch of metrics
+2023-12-17 23:02:48,266 INFO    Thread-12 :37652 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/chuak/mmser/src/multi_modal_ser/finetune_encoder/audio_video/wandb/run-20231217_230202-oryr3con/files/output.log
+2023-12-17 23:02:48,267 INFO    Thread-12 :37652 [dir_watcher.py:_on_file_created():271] file/dir created: /data/chuak/mmser/src/multi_modal_ser/finetune_encoder/audio_video/wandb/run-20231217_230202-oryr3con/files/wandb-summary.json
+2023-12-17 23:02:48,381 INFO    HandlerThread:37652 [interfaces.py:finish():202] Joined gpu monitor
+2023-12-17 23:02:48,382 INFO    HandlerThread:37652 [interfaces.py:finish():202] Joined memory monitor
+2023-12-17 23:02:48,382 INFO    HandlerThread:37652 [interfaces.py:finish():202] Joined network monitor
+2023-12-17 23:02:48,383 DEBUG   SenderThread:37652 [sender.py:send_request():409] send_request: defer
+2023-12-17 23:02:48,384 INFO    SenderThread:37652 [sender.py:send_request_defer():613] handle sender defer: 2
+2023-12-17 23:02:48,384 INFO    SenderThread:37652 [sender.py:transition_state():617] send defer: 3
+2023-12-17 23:02:48,384 DEBUG   SenderThread:37652 [sender.py:send():382] send: stats
+2023-12-17 23:02:48,388 DEBUG   HandlerThread:37652 [handler.py:handle_request():146] handle_request: defer
+2023-12-17 23:02:48,388 INFO    HandlerThread:37652 [handler.py:handle_request_defer():172] handle defer: 3
+2023-12-17 23:02:48,388 DEBUG   SenderThread:37652 [sender.py:send_request():409] send_request: defer
+2023-12-17 23:02:48,389 INFO    SenderThread:37652 [sender.py:send_request_defer():613] handle sender defer: 3
+2023-12-17 23:02:48,389 INFO    SenderThread:37652 [sender.py:transition_state():617] send defer: 4
+2023-12-17 23:02:48,389 DEBUG   HandlerThread:37652 [handler.py:handle_request():146] handle_request: defer
+2023-12-17 23:02:48,389 INFO    HandlerThread:37652 [handler.py:handle_request_defer():172] handle defer: 4
+2023-12-17 23:02:48,390 DEBUG   SenderThread:37652 [sender.py:send_request():409] send_request: defer
+2023-12-17 23:02:48,390 INFO    SenderThread:37652 [sender.py:send_request_defer():613] handle sender defer: 4
+2023-12-17 23:02:48,390 INFO    SenderThread:37652 [sender.py:transition_state():617] send defer: 5
+2023-12-17 23:02:48,391 DEBUG   HandlerThread:37652 [handler.py:handle_request():146] handle_request: defer
+2023-12-17 23:02:48,391 INFO    HandlerThread:37652 [handler.py:handle_request_defer():172] handle defer: 5
+2023-12-17 23:02:48,392 DEBUG   SenderThread:37652 [sender.py:send():382] send: summary
+2023-12-17 23:02:48,396 INFO    SenderThread:37652 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-17 23:02:48,397 DEBUG   SenderThread:37652 [sender.py:send_request():409] send_request: defer
+2023-12-17 23:02:48,398 INFO    SenderThread:37652 [sender.py:send_request_defer():613] handle sender defer: 5
+2023-12-17 23:02:48,398 INFO    SenderThread:37652 [sender.py:transition_state():617] send defer: 6
+2023-12-17 23:02:48,398 DEBUG   HandlerThread:37652 [handler.py:handle_request():146] handle_request: defer
+2023-12-17 23:02:48,398 INFO    HandlerThread:37652 [handler.py:handle_request_defer():172] handle defer: 6
+2023-12-17 23:02:48,399 DEBUG   SenderThread:37652 [sender.py:send_request():409] send_request: defer
+2023-12-17 23:02:48,399 INFO    SenderThread:37652 [sender.py:send_request_defer():613] handle sender defer: 6
+2023-12-17 23:02:48,399 INFO    SenderThread:37652 [sender.py:transition_state():617] send defer: 7
+2023-12-17 23:02:48,399 DEBUG   HandlerThread:37652 [handler.py:handle_request():146] handle_request: status_report
+2023-12-17 23:02:48,399 DEBUG   HandlerThread:37652 [handler.py:handle_request():146] handle_request: defer
+2023-12-17 23:02:48,399 INFO    HandlerThread:37652 [handler.py:handle_request_defer():172] handle defer: 7
+2023-12-17 23:02:48,400 DEBUG   SenderThread:37652 [sender.py:send_request():409] send_request: defer
+2023-12-17 23:02:48,400 INFO    SenderThread:37652 [sender.py:send_request_defer():613] handle sender defer: 7
+2023-12-17 23:02:48,425 DEBUG   HandlerThread:37652 [handler.py:handle_request():146] handle_request: poll_exit
+2023-12-17 23:02:49,268 INFO    Thread-12 :37652 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/chuak/mmser/src/multi_modal_ser/finetune_encoder/audio_video/wandb/run-20231217_230202-oryr3con/files/wandb-summary.json
+2023-12-17 23:02:50,187 INFO    SenderThread:37652 [sender.py:transition_state():617] send defer: 8
+2023-12-17 23:02:50,187 DEBUG   SenderThread:37652 [sender.py:send_request():409] send_request: poll_exit
+2023-12-17 23:02:50,187 DEBUG   HandlerThread:37652 [handler.py:handle_request():146] handle_request: defer
+2023-12-17 23:02:50,188 INFO    HandlerThread:37652 [handler.py:handle_request_defer():172] handle defer: 8
+2023-12-17 23:02:50,189 DEBUG   SenderThread:37652 [sender.py:send_request():409] send_request: defer
+2023-12-17 23:02:50,189 INFO    SenderThread:37652 [sender.py:send_request_defer():613] handle sender defer: 8
+2023-12-17 23:02:50,189 INFO    SenderThread:37652 [job_builder.py:build():298] Attempting to build job artifact
+2023-12-17 23:02:50,192 INFO    SenderThread:37652 [job_builder.py:_get_source_type():428] is repo sourced job
+2023-12-17 23:02:50,240 INFO    SenderThread:37652 [job_builder.py:build():404] adding wandb-job metadata file
+2023-12-17 23:02:50,270 INFO    Thread-12 :37652 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/chuak/mmser/src/multi_modal_ser/finetune_encoder/audio_video/wandb/run-20231217_230202-oryr3con/files/output.log
+2023-12-17 23:02:50,276 INFO    SenderThread:37652 [sender.py:transition_state():617] send defer: 9
+2023-12-17 23:02:50,277 DEBUG   HandlerThread:37652 [handler.py:handle_request():146] handle_request: defer
+2023-12-17 23:02:50,277 INFO    HandlerThread:37652 [handler.py:handle_request_defer():172] handle defer: 9
+2023-12-17 23:02:50,278 DEBUG   SenderThread:37652 [sender.py:send():382] send: artifact
+2023-12-17 23:02:51,658 INFO    wandb-upload_1:37652 [upload_job.py:push():86] Skipped uploading /homes/chuak/.local/share/wandb/artifacts/staging/tmpu25hr_2b
+2023-12-17 23:02:52,095 INFO    wandb-upload_0:37652 [upload_job.py:push():89] Uploaded file /homes/chuak/.local/share/wandb/artifacts/staging/tmppuyi0d3g
+2023-12-17 23:02:53,426 DEBUG   HandlerThread:37652 [handler.py:handle_request():146] handle_request: keepalive
+2023-12-17 23:02:53,704 INFO    SenderThread:37652 [sender.py:send_artifact():1470] sent artifact job-https___github.com_ChuakBlurk_multi_modal_ser.git_finetune_encoder_audio_video_train_roi_aug.py - {'id': 'QXJ0aWZhY3Q6NjY5MDQ1Mjcy', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEyNDE1NDkwMw==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NjY5MDM0OTM1', 'versionIndex': 0}}}
+2023-12-17 23:02:53,704 DEBUG   SenderThread:37652 [sender.py:send_request():409] send_request: defer
+2023-12-17 23:02:53,704 INFO    SenderThread:37652 [sender.py:send_request_defer():613] handle sender defer: 9
+2023-12-17 23:02:53,704 INFO    SenderThread:37652 [dir_watcher.py:finish():358] shutting down directory watcher
+2023-12-17 23:02:54,272 INFO    SenderThread:37652 [dir_watcher.py:finish():388] scan: /data/chuak/mmser/src/multi_modal_ser/finetune_encoder/audio_video/wandb/run-20231217_230202-oryr3con/files
+2023-12-17 23:02:54,273 INFO    SenderThread:37652 [dir_watcher.py:finish():402] scan save: /data/chuak/mmser/src/multi_modal_ser/finetune_encoder/audio_video/wandb/run-20231217_230202-oryr3con/files/config.yaml config.yaml
+2023-12-17 23:02:54,274 INFO    SenderThread:37652 [dir_watcher.py:finish():402] scan save: /data/chuak/mmser/src/multi_modal_ser/finetune_encoder/audio_video/wandb/run-20231217_230202-oryr3con/files/requirements.txt requirements.txt
+2023-12-17 23:02:54,275 INFO    SenderThread:37652 [dir_watcher.py:finish():402] scan save: /data/chuak/mmser/src/multi_modal_ser/finetune_encoder/audio_video/wandb/run-20231217_230202-oryr3con/files/wandb-metadata.json wandb-metadata.json
+2023-12-17 23:02:54,280 INFO    SenderThread:37652 [dir_watcher.py:finish():402] scan save: /data/chuak/mmser/src/multi_modal_ser/finetune_encoder/audio_video/wandb/run-20231217_230202-oryr3con/files/output.log output.log
+2023-12-17 23:02:54,281 INFO    SenderThread:37652 [dir_watcher.py:finish():402] scan save: /data/chuak/mmser/src/multi_modal_ser/finetune_encoder/audio_video/wandb/run-20231217_230202-oryr3con/files/wandb-summary.json wandb-summary.json
+2023-12-17 23:02:54,296 INFO    SenderThread:37652 [sender.py:transition_state():617] send defer: 10
+2023-12-17 23:02:54,296 DEBUG   HandlerThread:37652 [handler.py:handle_request():146] handle_request: defer
+2023-12-17 23:02:54,297 INFO    HandlerThread:37652 [handler.py:handle_request_defer():172] handle defer: 10
+2023-12-17 23:02:54,298 DEBUG   SenderThread:37652 [sender.py:send_request():409] send_request: defer
+2023-12-17 23:02:54,298 INFO    SenderThread:37652 [sender.py:send_request_defer():613] handle sender defer: 10
+2023-12-17 23:02:54,298 INFO    SenderThread:37652 [file_pusher.py:finish():175] shutting down file pusher
+2023-12-17 23:02:54,777 INFO    wandb-upload_2:37652 [upload_job.py:push():131] Uploaded file /data/chuak/mmser/src/multi_modal_ser/finetune_encoder/audio_video/wandb/run-20231217_230202-oryr3con/files/requirements.txt
+2023-12-17 23:02:54,859 INFO    wandb-upload_1:37652 [upload_job.py:push():131] Uploaded file /data/chuak/mmser/src/multi_modal_ser/finetune_encoder/audio_video/wandb/run-20231217_230202-oryr3con/files/config.yaml
+2023-12-17 23:02:55,178 INFO    wandb-upload_3:37652 [upload_job.py:push():131] Uploaded file /data/chuak/mmser/src/multi_modal_ser/finetune_encoder/audio_video/wandb/run-20231217_230202-oryr3con/files/wandb-summary.json
+2023-12-17 23:02:55,183 INFO    wandb-upload_0:37652 [upload_job.py:push():131] Uploaded file /data/chuak/mmser/src/multi_modal_ser/finetune_encoder/audio_video/wandb/run-20231217_230202-oryr3con/files/output.log
+2023-12-17 23:02:55,298 DEBUG   HandlerThread:37652 [handler.py:handle_request():146] handle_request: status_report
+2023-12-17 23:02:55,384 INFO    Thread-11 (_thread_body):37652 [sender.py:transition_state():617] send defer: 11
+2023-12-17 23:02:55,384 DEBUG   HandlerThread:37652 [handler.py:handle_request():146] handle_request: defer
+2023-12-17 23:02:55,384 INFO    HandlerThread:37652 [handler.py:handle_request_defer():172] handle defer: 11
+2023-12-17 23:02:55,386 DEBUG   SenderThread:37652 [sender.py:send_request():409] send_request: defer
+2023-12-17 23:02:55,386 INFO    SenderThread:37652 [sender.py:send_request_defer():613] handle sender defer: 11
+2023-12-17 23:02:55,386 INFO    SenderThread:37652 [file_pusher.py:join():181] waiting for file pusher
+2023-12-17 23:02:55,386 INFO    SenderThread:37652 [sender.py:transition_state():617] send defer: 12
+2023-12-17 23:02:55,387 DEBUG   HandlerThread:37652 [handler.py:handle_request():146] handle_request: defer
+2023-12-17 23:02:55,387 INFO    HandlerThread:37652 [handler.py:handle_request_defer():172] handle defer: 12
+2023-12-17 23:02:55,387 DEBUG   SenderThread:37652 [sender.py:send_request():409] send_request: defer
+2023-12-17 23:02:55,388 INFO    SenderThread:37652 [sender.py:send_request_defer():613] handle sender defer: 12
+2023-12-17 23:02:55,388 INFO    SenderThread:37652 [file_stream.py:finish():595] file stream finish called
+2023-12-17 23:02:55,612 INFO    SenderThread:37652 [file_stream.py:finish():599] file stream finish is done
+2023-12-17 23:02:55,612 INFO    SenderThread:37652 [sender.py:transition_state():617] send defer: 13
+2023-12-17 23:02:55,612 DEBUG   HandlerThread:37652 [handler.py:handle_request():146] handle_request: defer
+2023-12-17 23:02:55,613 INFO    HandlerThread:37652 [handler.py:handle_request_defer():172] handle defer: 13
+2023-12-17 23:02:55,613 DEBUG   SenderThread:37652 [sender.py:send_request():409] send_request: defer
+2023-12-17 23:02:55,614 INFO    SenderThread:37652 [sender.py:send_request_defer():613] handle sender defer: 13
+2023-12-17 23:02:55,614 INFO    SenderThread:37652 [sender.py:transition_state():617] send defer: 14
+2023-12-17 23:02:55,614 DEBUG   HandlerThread:37652 [handler.py:handle_request():146] handle_request: defer
+2023-12-17 23:02:55,615 INFO    HandlerThread:37652 [handler.py:handle_request_defer():172] handle defer: 14
+2023-12-17 23:02:55,616 DEBUG   SenderThread:37652 [sender.py:send():382] send: final
+2023-12-17 23:02:55,616 DEBUG   SenderThread:37652 [sender.py:send():382] send: footer
+2023-12-17 23:02:55,616 DEBUG   SenderThread:37652 [sender.py:send_request():409] send_request: defer
+2023-12-17 23:02:55,616 INFO    SenderThread:37652 [sender.py:send_request_defer():613] handle sender defer: 14
+2023-12-17 23:02:55,617 DEBUG   HandlerThread:37652 [handler.py:handle_request():146] handle_request: poll_exit
+2023-12-17 23:02:55,619 DEBUG   HandlerThread:37652 [handler.py:handle_request():146] handle_request: server_info
+2023-12-17 23:02:55,619 DEBUG   SenderThread:37652 [sender.py:send_request():409] send_request: poll_exit
+2023-12-17 23:02:55,621 DEBUG   SenderThread:37652 [sender.py:send_request():409] send_request: server_info
+2023-12-17 23:02:55,626 DEBUG   HandlerThread:37652 [handler.py:handle_request():146] handle_request: get_summary
+2023-12-17 23:02:55,629 DEBUG   HandlerThread:37652 [handler.py:handle_request():146] handle_request: sampled_history
+2023-12-17 23:02:55,631 DEBUG   HandlerThread:37652 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-17 23:02:55,632 DEBUG   HandlerThread:37652 [handler.py:handle_request():146] handle_request: job_info
+2023-12-17 23:02:55,828 DEBUG   SenderThread:37652 [sender.py:send_request():409] send_request: job_info
+2023-12-17 23:02:55,829 INFO    MainThread:37652 [wandb_run.py:_footer_history_summary_info():3837] rendering history
+2023-12-17 23:02:55,829 INFO    MainThread:37652 [wandb_run.py:_footer_history_summary_info():3869] rendering summary
+2023-12-17 23:02:55,830 INFO    MainThread:37652 [wandb_run.py:_footer_sync_info():3796] logging synced files
+2023-12-17 23:02:55,831 DEBUG   HandlerThread:37652 [handler.py:handle_request():146] handle_request: shutdown
+2023-12-17 23:02:55,831 INFO    HandlerThread:37652 [handler.py:finish():866] shutting down handler
+2023-12-17 23:02:56,633 INFO    WriterThread:37652 [datastore.py:close():294] close: /data/chuak/mmser/src/multi_modal_ser/finetune_encoder/audio_video/wandb/run-20231217_230202-oryr3con/run-oryr3con.wandb
+2023-12-17 23:02:56,829 INFO    SenderThread:37652 [sender.py:finish():1548] shutting down sender
+2023-12-17 23:02:56,829 INFO    SenderThread:37652 [file_pusher.py:finish():175] shutting down file pusher
+2023-12-17 23:02:56,829 INFO    SenderThread:37652 [file_pusher.py:join():181] waiting for file pusher

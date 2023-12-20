@@ -1,0 +1,184 @@
+2023-12-17 22:40:05,408 INFO    StreamThr :32050 [internal.py:wandb_internal():86] W&B internal server running at pid: 32050, started at: 2023-12-17 22:40:05.406179
+2023-12-17 22:40:05,413 DEBUG   HandlerThread:32050 [handler.py:handle_request():146] handle_request: status
+2023-12-17 22:40:05,420 INFO    WriterThread:32050 [datastore.py:open_for_write():85] open: /data/chuak/mmser/src/multi_modal_ser/finetune_encoder/audio_video/wandb/run-20231217_224005-xiix636z/run-xiix636z.wandb
+2023-12-17 22:40:05,423 DEBUG   SenderThread:32050 [sender.py:send():382] send: header
+2023-12-17 22:40:05,454 DEBUG   SenderThread:32050 [sender.py:send():382] send: run
+2023-12-17 22:40:06,164 INFO    SenderThread:32050 [dir_watcher.py:__init__():211] watching files in: /data/chuak/mmser/src/multi_modal_ser/finetune_encoder/audio_video/wandb/run-20231217_224005-xiix636z/files
+2023-12-17 22:40:06,164 INFO    SenderThread:32050 [sender.py:_start_run_threads():1136] run started: xiix636z with start time 1702824005.405816
+2023-12-17 22:40:06,178 DEBUG   HandlerThread:32050 [handler.py:handle_request():146] handle_request: check_version
+2023-12-17 22:40:06,183 DEBUG   SenderThread:32050 [sender.py:send_request():409] send_request: check_version
+2023-12-17 22:40:06,371 DEBUG   HandlerThread:32050 [handler.py:handle_request():146] handle_request: run_start
+2023-12-17 22:40:06,378 DEBUG   HandlerThread:32050 [system_info.py:__init__():32] System info init
+2023-12-17 22:40:06,378 DEBUG   HandlerThread:32050 [system_info.py:__init__():47] System info init done
+2023-12-17 22:40:06,378 INFO    HandlerThread:32050 [system_monitor.py:start():194] Starting system monitor
+2023-12-17 22:40:06,386 INFO    SystemMonitor:32050 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2023-12-17 22:40:06,387 INFO    HandlerThread:32050 [system_monitor.py:probe():214] Collecting system info
+2023-12-17 22:40:06,389 INFO    SystemMonitor:32050 [interfaces.py:start():190] Started cpu monitoring
+2023-12-17 22:40:06,390 INFO    SystemMonitor:32050 [interfaces.py:start():190] Started disk monitoring
+2023-12-17 22:40:06,398 INFO    SystemMonitor:32050 [interfaces.py:start():190] Started gpu monitoring
+2023-12-17 22:40:06,403 INFO    SystemMonitor:32050 [interfaces.py:start():190] Started memory monitoring
+2023-12-17 22:40:06,411 INFO    SystemMonitor:32050 [interfaces.py:start():190] Started network monitoring
+2023-12-17 22:40:06,462 DEBUG   HandlerThread:32050 [system_info.py:probe():196] Probing system
+2023-12-17 22:40:06,463 DEBUG   HandlerThread:32050 [system_info.py:_probe_git():181] Probing git
+2023-12-17 22:40:06,480 DEBUG   HandlerThread:32050 [system_info.py:_probe_git():189] Probing git done
+2023-12-17 22:40:06,480 DEBUG   HandlerThread:32050 [system_info.py:probe():244] Probing system done
+2023-12-17 22:40:06,480 DEBUG   HandlerThread:32050 [system_monitor.py:probe():223] {'os': 'Linux-3.10.0-1160.102.1.el7.x86_64-x86_64-with-glibc2.17', 'python': '3.10.0', 'heartbeatAt': '2023-12-17T14:40:06.462874', 'startedAt': '2023-12-17T14:40:05.364904', 'docker': None, 'cuda': None, 'args': ('dummy',), 'state': 'running', 'program': '/data/chuak/mmser/src/multi_modal_ser/finetune_encoder/audio_video/train_roi_aug.py', 'codePathLocal': 'train_roi_aug.py', 'codePath': 'finetune_encoder/audio_video/train_roi_aug.py', 'git': {'remote': 'https://github.com/ChuakBlurk/multi_modal_ser.git', 'commit': '693fa132e7bcef9e3a407d6b9ac6cad8a7cf1996'}, 'email': None, 'root': '/data/chuak/mmser/src/multi_modal_ser', 'host': 'ugcpu1', 'username': 'chuak', 'executable': '/data/chuak/mmser/bin/python', 'cpu_count': 24, 'cpu_count_logical': 48, 'cpu_freq': {'current': 3300.0, 'min': 800.0, 'max': 3300.0}, 'cpu_freq_per_core': [{'current': 3300.0, 'min': 800.0, 'max': 3300.0}, {'current': 3300.0, 'min': 800.0, 'max': 3300.0}, {'current': 3300.0, 'min': 800.0, 'max': 3300.0}, {'current': 3300.0, 'min': 800.0, 'max': 3300.0}, {'current': 3300.0, 'min': 800.0, 'max': 3300.0}, {'current': 3300.0, 'min': 800.0, 'max': 3300.0}, {'current': 3300.0, 'min': 800.0, 'max': 3300.0}, {'current': 3300.0, 'min': 800.0, 'max': 3300.0}, {'current': 3300.0, 'min': 800.0, 'max': 3300.0}, {'current': 3300.0, 'min': 800.0, 'max': 3300.0}, {'current': 3300.0, 'min': 800.0, 'max': 3300.0}, {'current': 3300.0, 'min': 800.0, 'max': 3300.0}, {'current': 3300.0, 'min': 800.0, 'max': 3300.0}, {'current': 3300.0, 'min': 800.0, 'max': 3300.0}, {'current': 3300.0, 'min': 800.0, 'max': 3300.0}, {'current': 3300.0, 'min': 800.0, 'max': 3300.0}, {'current': 3300.0, 'min': 800.0, 'max': 3300.0}, {'current': 3300.0, 'min': 800.0, 'max': 3300.0}, {'current': 3300.0, 'min': 800.0, 'max': 3300.0}, {'current': 3300.0, 'min': 800.0, 'max': 3300.0}, {'current': 3300.0, 'min': 800.0, 'max': 3300.0}, {'current': 3300.0, 'min': 800.0, 'max': 3300.0}, {'current': 3300.0, 'min': 800.0, 'max': 3300.0}, {'current': 3300.0, 'min': 800.0, 'max': 3300.0}, {'current': 3300.0, 'min': 800.0, 'max': 3300.0}, {'current': 3300.0, 'min': 800.0, 'max': 3300.0}, {'current': 3300.0, 'min': 800.0, 'max': 3300.0}, {'current': 3300.0, 'min': 800.0, 'max': 3300.0}, {'current': 3300.0, 'min': 800.0, 'max': 3300.0}, {'current': 3300.0, 'min': 800.0, 'max': 3300.0}, {'current': 3300.0, 'min': 800.0, 'max': 3300.0}, {'current': 3300.0, 'min': 800.0, 'max': 3300.0}, {'current': 3300.0, 'min': 800.0, 'max': 3300.0}, {'current': 3300.0, 'min': 800.0, 'max': 3300.0}, {'current': 3300.0, 'min': 800.0, 'max': 3300.0}, {'current': 3300.0, 'min': 800.0, 'max': 3300.0}, {'current': 3300.0, 'min': 800.0, 'max': 3300.0}, {'current': 3300.0, 'min': 800.0, 'max': 3300.0}, {'current': 3300.0, 'min': 800.0, 'max': 3300.0}, {'current': 3300.0, 'min': 800.0, 'max': 3300.0}, {'current': 3300.0, 'min': 800.0, 'max': 3300.0}, {'current': 3300.0, 'min': 800.0, 'max': 3300.0}, {'current': 3300.0, 'min': 800.0, 'max': 3300.0}, {'current': 3300.0, 'min': 800.0, 'max': 3300.0}, {'current': 3300.0, 'min': 800.0, 'max': 3300.0}, {'current': 3300.0, 'min': 800.0, 'max': 3300.0}, {'current': 3300.0, 'min': 800.0, 'max': 3300.0}, {'current': 3300.0, 'min': 800.0, 'max': 3300.0}], 'disk': {'/': {'total': 19.990234375, 'used': 5.294483184814453}}, 'gpu': 'NVIDIA GeForce RTX 3080 Ti', 'gpu_count': 8, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3080 Ti', 'memory_total': 12884901888}, {'name': 'NVIDIA GeForce RTX 3080 Ti', 'memory_total': 12884901888}, {'name': 'NVIDIA GeForce RTX 3080 Ti', 'memory_total': 12884901888}, {'name': 'NVIDIA GeForce RTX 3080 Ti', 'memory_total': 12884901888}, {'name': 'NVIDIA GeForce RTX 3080 Ti', 'memory_total': 12884901888}, {'name': 'NVIDIA GeForce RTX 3080 Ti', 'memory_total': 12884901888}, {'name': 'NVIDIA GeForce RTX 3080 Ti', 'memory_total': 12884901888}, {'name': 'NVIDIA GeForce RTX 3080 Ti', 'memory_total': 12884901888}], 'memory': {'total': 125.41300582885742}}
+2023-12-17 22:40:06,480 INFO    HandlerThread:32050 [system_monitor.py:probe():224] Finished collecting system info
+2023-12-17 22:40:06,480 INFO    HandlerThread:32050 [system_monitor.py:probe():227] Publishing system info
+2023-12-17 22:40:06,480 DEBUG   HandlerThread:32050 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2023-12-17 22:40:06,482 DEBUG   HandlerThread:32050 [system_info.py:_save_pip():68] Saving pip packages done
+2023-12-17 22:40:06,485 INFO    HandlerThread:32050 [system_monitor.py:probe():229] Finished publishing system info
+2023-12-17 22:40:06,491 DEBUG   SenderThread:32050 [sender.py:send():382] send: files
+2023-12-17 22:40:06,491 INFO    SenderThread:32050 [sender.py:_save_file():1392] saving file wandb-metadata.json with policy now
+2023-12-17 22:40:06,502 DEBUG   HandlerThread:32050 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-17 22:40:06,502 DEBUG   SenderThread:32050 [sender.py:send_request():409] send_request: stop_status
+2023-12-17 22:40:06,556 DEBUG   HandlerThread:32050 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-17 22:40:06,833 DEBUG   SenderThread:32050 [sender.py:send():382] send: telemetry
+2023-12-17 22:40:06,838 DEBUG   SenderThread:32050 [sender.py:send():382] send: exit
+2023-12-17 22:40:06,839 INFO    SenderThread:32050 [sender.py:send_exit():589] handling exit code: 1
+2023-12-17 22:40:06,839 INFO    SenderThread:32050 [sender.py:send_exit():591] handling runtime: 0
+2023-12-17 22:40:06,841 INFO    SenderThread:32050 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-17 22:40:06,842 INFO    SenderThread:32050 [sender.py:send_exit():597] send defer
+2023-12-17 22:40:06,842 DEBUG   HandlerThread:32050 [handler.py:handle_request():146] handle_request: defer
+2023-12-17 22:40:06,842 INFO    HandlerThread:32050 [handler.py:handle_request_defer():172] handle defer: 0
+2023-12-17 22:40:06,842 DEBUG   SenderThread:32050 [sender.py:send_request():409] send_request: defer
+2023-12-17 22:40:06,843 INFO    SenderThread:32050 [sender.py:send_request_defer():613] handle sender defer: 0
+2023-12-17 22:40:06,843 INFO    SenderThread:32050 [sender.py:transition_state():617] send defer: 1
+2023-12-17 22:40:06,843 DEBUG   HandlerThread:32050 [handler.py:handle_request():146] handle_request: defer
+2023-12-17 22:40:06,843 INFO    HandlerThread:32050 [handler.py:handle_request_defer():172] handle defer: 1
+2023-12-17 22:40:06,843 DEBUG   SenderThread:32050 [sender.py:send_request():409] send_request: defer
+2023-12-17 22:40:06,843 INFO    SenderThread:32050 [sender.py:send_request_defer():613] handle sender defer: 1
+2023-12-17 22:40:06,843 INFO    SenderThread:32050 [sender.py:transition_state():617] send defer: 2
+2023-12-17 22:40:06,843 DEBUG   HandlerThread:32050 [handler.py:handle_request():146] handle_request: defer
+2023-12-17 22:40:06,843 INFO    HandlerThread:32050 [handler.py:handle_request_defer():172] handle defer: 2
+2023-12-17 22:40:06,843 INFO    HandlerThread:32050 [system_monitor.py:finish():203] Stopping system monitor
+2023-12-17 22:40:06,844 DEBUG   SystemMonitor:32050 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2023-12-17 22:40:06,844 DEBUG   SystemMonitor:32050 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2023-12-17 22:40:06,844 DEBUG   SystemMonitor:32050 [system_monitor.py:_start():183] Publishing last batch of metrics
+2023-12-17 22:40:06,845 INFO    HandlerThread:32050 [interfaces.py:finish():202] Joined cpu monitor
+2023-12-17 22:40:06,846 INFO    HandlerThread:32050 [interfaces.py:finish():202] Joined disk monitor
+2023-12-17 22:40:07,168 INFO    Thread-12 :32050 [dir_watcher.py:_on_file_created():271] file/dir created: /data/chuak/mmser/src/multi_modal_ser/finetune_encoder/audio_video/wandb/run-20231217_224005-xiix636z/files/wandb-metadata.json
+2023-12-17 22:40:07,169 INFO    Thread-12 :32050 [dir_watcher.py:_on_file_created():271] file/dir created: /data/chuak/mmser/src/multi_modal_ser/finetune_encoder/audio_video/wandb/run-20231217_224005-xiix636z/files/output.log
+2023-12-17 22:40:07,169 INFO    Thread-12 :32050 [dir_watcher.py:_on_file_created():271] file/dir created: /data/chuak/mmser/src/multi_modal_ser/finetune_encoder/audio_video/wandb/run-20231217_224005-xiix636z/files/wandb-summary.json
+2023-12-17 22:40:07,169 INFO    Thread-12 :32050 [dir_watcher.py:_on_file_created():271] file/dir created: /data/chuak/mmser/src/multi_modal_ser/finetune_encoder/audio_video/wandb/run-20231217_224005-xiix636z/files/requirements.txt
+2023-12-17 22:40:07,346 INFO    wandb-upload_0:32050 [upload_job.py:push():131] Uploaded file /tmp/tmp8r4l7_g1wandb/71i3n1ne-wandb-metadata.json
+2023-12-17 22:40:08,251 INFO    HandlerThread:32050 [interfaces.py:finish():202] Joined gpu monitor
+2023-12-17 22:40:08,252 INFO    HandlerThread:32050 [interfaces.py:finish():202] Joined memory monitor
+2023-12-17 22:40:08,252 INFO    HandlerThread:32050 [interfaces.py:finish():202] Joined network monitor
+2023-12-17 22:40:08,252 DEBUG   HandlerThread:32050 [handler.py:handle_request():146] handle_request: poll_exit
+2023-12-17 22:40:08,253 DEBUG   SenderThread:32050 [sender.py:send_request():409] send_request: defer
+2023-12-17 22:40:08,253 INFO    SenderThread:32050 [sender.py:send_request_defer():613] handle sender defer: 2
+2023-12-17 22:40:08,253 INFO    SenderThread:32050 [sender.py:transition_state():617] send defer: 3
+2023-12-17 22:40:08,253 DEBUG   SenderThread:32050 [sender.py:send():382] send: stats
+2023-12-17 22:40:08,254 DEBUG   SenderThread:32050 [sender.py:send_request():409] send_request: poll_exit
+2023-12-17 22:40:08,256 DEBUG   HandlerThread:32050 [handler.py:handle_request():146] handle_request: defer
+2023-12-17 22:40:08,256 INFO    HandlerThread:32050 [handler.py:handle_request_defer():172] handle defer: 3
+2023-12-17 22:40:08,256 DEBUG   SenderThread:32050 [sender.py:send_request():409] send_request: defer
+2023-12-17 22:40:08,257 INFO    SenderThread:32050 [sender.py:send_request_defer():613] handle sender defer: 3
+2023-12-17 22:40:08,257 INFO    SenderThread:32050 [sender.py:transition_state():617] send defer: 4
+2023-12-17 22:40:08,257 DEBUG   HandlerThread:32050 [handler.py:handle_request():146] handle_request: defer
+2023-12-17 22:40:08,257 INFO    HandlerThread:32050 [handler.py:handle_request_defer():172] handle defer: 4
+2023-12-17 22:40:08,257 DEBUG   SenderThread:32050 [sender.py:send_request():409] send_request: defer
+2023-12-17 22:40:08,257 INFO    SenderThread:32050 [sender.py:send_request_defer():613] handle sender defer: 4
+2023-12-17 22:40:08,257 INFO    SenderThread:32050 [sender.py:transition_state():617] send defer: 5
+2023-12-17 22:40:08,257 DEBUG   HandlerThread:32050 [handler.py:handle_request():146] handle_request: defer
+2023-12-17 22:40:08,257 INFO    HandlerThread:32050 [handler.py:handle_request_defer():172] handle defer: 5
+2023-12-17 22:40:08,258 DEBUG   SenderThread:32050 [sender.py:send():382] send: summary
+2023-12-17 22:40:08,262 INFO    SenderThread:32050 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2023-12-17 22:40:08,263 DEBUG   SenderThread:32050 [sender.py:send_request():409] send_request: defer
+2023-12-17 22:40:08,263 INFO    SenderThread:32050 [sender.py:send_request_defer():613] handle sender defer: 5
+2023-12-17 22:40:08,263 INFO    SenderThread:32050 [sender.py:transition_state():617] send defer: 6
+2023-12-17 22:40:08,263 DEBUG   HandlerThread:32050 [handler.py:handle_request():146] handle_request: defer
+2023-12-17 22:40:08,263 INFO    HandlerThread:32050 [handler.py:handle_request_defer():172] handle defer: 6
+2023-12-17 22:40:08,263 DEBUG   SenderThread:32050 [sender.py:send_request():409] send_request: defer
+2023-12-17 22:40:08,263 INFO    SenderThread:32050 [sender.py:send_request_defer():613] handle sender defer: 6
+2023-12-17 22:40:08,268 DEBUG   HandlerThread:32050 [handler.py:handle_request():146] handle_request: status_report
+2023-12-17 22:40:08,518 INFO    SenderThread:32050 [sender.py:transition_state():617] send defer: 7
+2023-12-17 22:40:08,518 DEBUG   HandlerThread:32050 [handler.py:handle_request():146] handle_request: defer
+2023-12-17 22:40:08,518 INFO    HandlerThread:32050 [handler.py:handle_request_defer():172] handle defer: 7
+2023-12-17 22:40:08,519 DEBUG   SenderThread:32050 [sender.py:send_request():409] send_request: defer
+2023-12-17 22:40:08,519 INFO    SenderThread:32050 [sender.py:send_request_defer():613] handle sender defer: 7
+2023-12-17 22:40:08,559 DEBUG   HandlerThread:32050 [handler.py:handle_request():146] handle_request: poll_exit
+2023-12-17 22:40:08,856 INFO    SenderThread:32050 [sender.py:transition_state():617] send defer: 8
+2023-12-17 22:40:08,856 DEBUG   SenderThread:32050 [sender.py:send_request():409] send_request: poll_exit
+2023-12-17 22:40:08,856 DEBUG   HandlerThread:32050 [handler.py:handle_request():146] handle_request: defer
+2023-12-17 22:40:08,856 INFO    HandlerThread:32050 [handler.py:handle_request_defer():172] handle defer: 8
+2023-12-17 22:40:08,857 DEBUG   SenderThread:32050 [sender.py:send_request():409] send_request: defer
+2023-12-17 22:40:08,857 INFO    SenderThread:32050 [sender.py:send_request_defer():613] handle sender defer: 8
+2023-12-17 22:40:08,857 INFO    SenderThread:32050 [job_builder.py:build():298] Attempting to build job artifact
+2023-12-17 22:40:08,857 INFO    SenderThread:32050 [job_builder.py:_get_source_type():428] is repo sourced job
+2023-12-17 22:40:08,893 INFO    SenderThread:32050 [job_builder.py:build():404] adding wandb-job metadata file
+2023-12-17 22:40:08,935 INFO    SenderThread:32050 [sender.py:transition_state():617] send defer: 9
+2023-12-17 22:40:08,935 DEBUG   HandlerThread:32050 [handler.py:handle_request():146] handle_request: defer
+2023-12-17 22:40:08,935 DEBUG   SenderThread:32050 [sender.py:send():382] send: artifact
+2023-12-17 22:40:08,936 INFO    HandlerThread:32050 [handler.py:handle_request_defer():172] handle defer: 9
+2023-12-17 22:40:09,167 INFO    Thread-12 :32050 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/chuak/mmser/src/multi_modal_ser/finetune_encoder/audio_video/wandb/run-20231217_224005-xiix636z/files/config.yaml
+2023-12-17 22:40:09,167 INFO    Thread-12 :32050 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/chuak/mmser/src/multi_modal_ser/finetune_encoder/audio_video/wandb/run-20231217_224005-xiix636z/files/output.log
+2023-12-17 22:40:09,167 INFO    Thread-12 :32050 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/chuak/mmser/src/multi_modal_ser/finetune_encoder/audio_video/wandb/run-20231217_224005-xiix636z/files/wandb-summary.json
+2023-12-17 22:40:09,566 DEBUG   HandlerThread:32050 [handler.py:handle_request():146] handle_request: poll_exit
+2023-12-17 22:40:10,664 INFO    wandb-upload_1:32050 [upload_job.py:push():89] Uploaded file /homes/chuak/.local/share/wandb/artifacts/staging/tmpcfvvbxn8
+2023-12-17 22:40:10,715 INFO    wandb-upload_0:32050 [upload_job.py:push():89] Uploaded file /homes/chuak/.local/share/wandb/artifacts/staging/tmpy9dipg65
+2023-12-17 22:40:11,945 INFO    SenderThread:32050 [sender.py:send_artifact():1470] sent artifact job-https___github.com_ChuakBlurk_multi_modal_ser.git_finetune_encoder_audio_video_train_roi_aug.py - {'id': 'QXJ0aWZhY3Q6NjY5MDM0OTM1', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEyNDE1NDkwMw==', 'latestArtifact': None}}
+2023-12-17 22:40:11,945 DEBUG   SenderThread:32050 [sender.py:send_request():409] send_request: defer
+2023-12-17 22:40:11,945 INFO    SenderThread:32050 [sender.py:send_request_defer():613] handle sender defer: 9
+2023-12-17 22:40:11,945 INFO    SenderThread:32050 [dir_watcher.py:finish():358] shutting down directory watcher
+2023-12-17 22:40:12,169 INFO    SenderThread:32050 [dir_watcher.py:finish():388] scan: /data/chuak/mmser/src/multi_modal_ser/finetune_encoder/audio_video/wandb/run-20231217_224005-xiix636z/files
+2023-12-17 22:40:12,170 INFO    SenderThread:32050 [dir_watcher.py:finish():402] scan save: /data/chuak/mmser/src/multi_modal_ser/finetune_encoder/audio_video/wandb/run-20231217_224005-xiix636z/files/config.yaml config.yaml
+2023-12-17 22:40:12,170 INFO    SenderThread:32050 [dir_watcher.py:finish():402] scan save: /data/chuak/mmser/src/multi_modal_ser/finetune_encoder/audio_video/wandb/run-20231217_224005-xiix636z/files/requirements.txt requirements.txt
+2023-12-17 22:40:12,170 INFO    SenderThread:32050 [dir_watcher.py:finish():402] scan save: /data/chuak/mmser/src/multi_modal_ser/finetune_encoder/audio_video/wandb/run-20231217_224005-xiix636z/files/wandb-metadata.json wandb-metadata.json
+2023-12-17 22:40:12,170 INFO    SenderThread:32050 [dir_watcher.py:finish():402] scan save: /data/chuak/mmser/src/multi_modal_ser/finetune_encoder/audio_video/wandb/run-20231217_224005-xiix636z/files/output.log output.log
+2023-12-17 22:40:12,177 INFO    SenderThread:32050 [dir_watcher.py:finish():402] scan save: /data/chuak/mmser/src/multi_modal_ser/finetune_encoder/audio_video/wandb/run-20231217_224005-xiix636z/files/wandb-summary.json wandb-summary.json
+2023-12-17 22:40:12,182 INFO    SenderThread:32050 [sender.py:transition_state():617] send defer: 10
+2023-12-17 22:40:12,182 DEBUG   SenderThread:32050 [sender.py:send_request():409] send_request: poll_exit
+2023-12-17 22:40:12,182 DEBUG   HandlerThread:32050 [handler.py:handle_request():146] handle_request: defer
+2023-12-17 22:40:12,183 INFO    HandlerThread:32050 [handler.py:handle_request_defer():172] handle defer: 10
+2023-12-17 22:40:12,186 DEBUG   SenderThread:32050 [sender.py:send_request():409] send_request: defer
+2023-12-17 22:40:12,187 INFO    SenderThread:32050 [sender.py:send_request_defer():613] handle sender defer: 10
+2023-12-17 22:40:12,187 INFO    SenderThread:32050 [file_pusher.py:finish():175] shutting down file pusher
+2023-12-17 22:40:12,688 INFO    wandb-upload_1:32050 [upload_job.py:push():131] Uploaded file /data/chuak/mmser/src/multi_modal_ser/finetune_encoder/audio_video/wandb/run-20231217_224005-xiix636z/files/config.yaml
+2023-12-17 22:40:12,931 INFO    wandb-upload_0:32050 [upload_job.py:push():131] Uploaded file /data/chuak/mmser/src/multi_modal_ser/finetune_encoder/audio_video/wandb/run-20231217_224005-xiix636z/files/requirements.txt
+2023-12-17 22:40:12,970 INFO    wandb-upload_3:32050 [upload_job.py:push():131] Uploaded file /data/chuak/mmser/src/multi_modal_ser/finetune_encoder/audio_video/wandb/run-20231217_224005-xiix636z/files/wandb-summary.json
+2023-12-17 22:40:13,025 INFO    wandb-upload_2:32050 [upload_job.py:push():131] Uploaded file /data/chuak/mmser/src/multi_modal_ser/finetune_encoder/audio_video/wandb/run-20231217_224005-xiix636z/files/output.log
+2023-12-17 22:40:13,225 INFO    Thread-11 (_thread_body):32050 [sender.py:transition_state():617] send defer: 11
+2023-12-17 22:40:13,225 DEBUG   HandlerThread:32050 [handler.py:handle_request():146] handle_request: defer
+2023-12-17 22:40:13,226 INFO    HandlerThread:32050 [handler.py:handle_request_defer():172] handle defer: 11
+2023-12-17 22:40:13,226 DEBUG   SenderThread:32050 [sender.py:send_request():409] send_request: defer
+2023-12-17 22:40:13,226 INFO    SenderThread:32050 [sender.py:send_request_defer():613] handle sender defer: 11
+2023-12-17 22:40:13,226 INFO    SenderThread:32050 [file_pusher.py:join():181] waiting for file pusher
+2023-12-17 22:40:13,226 INFO    SenderThread:32050 [sender.py:transition_state():617] send defer: 12
+2023-12-17 22:40:13,226 DEBUG   HandlerThread:32050 [handler.py:handle_request():146] handle_request: defer
+2023-12-17 22:40:13,226 INFO    HandlerThread:32050 [handler.py:handle_request_defer():172] handle defer: 12
+2023-12-17 22:40:13,233 DEBUG   SenderThread:32050 [sender.py:send_request():409] send_request: defer
+2023-12-17 22:40:13,233 INFO    SenderThread:32050 [sender.py:send_request_defer():613] handle sender defer: 12
+2023-12-17 22:40:13,233 INFO    SenderThread:32050 [file_stream.py:finish():595] file stream finish called
+2023-12-17 22:40:13,474 INFO    SenderThread:32050 [file_stream.py:finish():599] file stream finish is done
+2023-12-17 22:40:13,474 INFO    SenderThread:32050 [sender.py:transition_state():617] send defer: 13
+2023-12-17 22:40:13,475 DEBUG   HandlerThread:32050 [handler.py:handle_request():146] handle_request: defer
+2023-12-17 22:40:13,475 INFO    HandlerThread:32050 [handler.py:handle_request_defer():172] handle defer: 13
+2023-12-17 22:40:13,475 DEBUG   SenderThread:32050 [sender.py:send_request():409] send_request: defer
+2023-12-17 22:40:13,475 INFO    SenderThread:32050 [sender.py:send_request_defer():613] handle sender defer: 13
+2023-12-17 22:40:13,475 INFO    SenderThread:32050 [sender.py:transition_state():617] send defer: 14
+2023-12-17 22:40:13,476 DEBUG   HandlerThread:32050 [handler.py:handle_request():146] handle_request: defer
+2023-12-17 22:40:13,476 INFO    HandlerThread:32050 [handler.py:handle_request_defer():172] handle defer: 14
+2023-12-17 22:40:13,476 DEBUG   SenderThread:32050 [sender.py:send():382] send: final
+2023-12-17 22:40:13,476 DEBUG   SenderThread:32050 [sender.py:send():382] send: footer
+2023-12-17 22:40:13,476 DEBUG   SenderThread:32050 [sender.py:send_request():409] send_request: defer
+2023-12-17 22:40:13,476 INFO    SenderThread:32050 [sender.py:send_request_defer():613] handle sender defer: 14
+2023-12-17 22:40:13,477 DEBUG   HandlerThread:32050 [handler.py:handle_request():146] handle_request: poll_exit
+2023-12-17 22:40:13,477 DEBUG   SenderThread:32050 [sender.py:send_request():409] send_request: poll_exit
+2023-12-17 22:40:13,478 DEBUG   HandlerThread:32050 [handler.py:handle_request():146] handle_request: server_info
+2023-12-17 22:40:13,478 DEBUG   SenderThread:32050 [sender.py:send_request():409] send_request: server_info
+2023-12-17 22:40:13,487 DEBUG   HandlerThread:32050 [handler.py:handle_request():146] handle_request: get_summary
+2023-12-17 22:40:13,487 DEBUG   HandlerThread:32050 [handler.py:handle_request():146] handle_request: sampled_history
+2023-12-17 22:40:13,488 DEBUG   HandlerThread:32050 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-17 22:40:13,488 DEBUG   HandlerThread:32050 [handler.py:handle_request():146] handle_request: job_info
+2023-12-17 22:40:13,685 DEBUG   SenderThread:32050 [sender.py:send_request():409] send_request: job_info
+2023-12-17 22:40:13,685 INFO    MainThread:32050 [wandb_run.py:_footer_history_summary_info():3837] rendering history
+2023-12-17 22:40:13,685 INFO    MainThread:32050 [wandb_run.py:_footer_history_summary_info():3869] rendering summary
+2023-12-17 22:40:13,685 INFO    MainThread:32050 [wandb_run.py:_footer_sync_info():3796] logging synced files
+2023-12-17 22:40:13,685 DEBUG   HandlerThread:32050 [handler.py:handle_request():146] handle_request: shutdown
+2023-12-17 22:40:13,686 INFO    HandlerThread:32050 [handler.py:finish():866] shutting down handler
+2023-12-17 22:40:14,488 INFO    WriterThread:32050 [datastore.py:close():294] close: /data/chuak/mmser/src/multi_modal_ser/finetune_encoder/audio_video/wandb/run-20231217_224005-xiix636z/run-xiix636z.wandb
+2023-12-17 22:40:14,691 INFO    SenderThread:32050 [sender.py:finish():1548] shutting down sender
+2023-12-17 22:40:14,691 INFO    SenderThread:32050 [file_pusher.py:finish():175] shutting down file pusher
+2023-12-17 22:40:14,692 INFO    SenderThread:32050 [file_pusher.py:join():181] waiting for file pusher
